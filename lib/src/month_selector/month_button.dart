@@ -51,6 +51,7 @@ class MonthButton extends StatelessWidget {
     final Color backgroundColor =
         controller.selectedMonthBackgroundColor ?? theme.colorScheme.secondary;
     final ButtonStyle monthStyle = TextButton.styleFrom(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       foregroundColor: date.month == controller.selectedDate.month &&
               date.year == controller.selectedDate.year
           ? theme.textTheme.labelLarge!
@@ -67,7 +68,6 @@ class MonthButton extends StatelessWidget {
               date.year == controller.selectedDate.year
           ? backgroundColor
           : null,
-      shape: const CircleBorder(),
     );
     return monthStyle;
   }

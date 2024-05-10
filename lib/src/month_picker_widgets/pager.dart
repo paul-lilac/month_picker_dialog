@@ -21,7 +21,6 @@ class PickerPager extends StatelessWidget {
         data: theme.copyWith(
           buttonTheme: const ButtonThemeData(
             padding: EdgeInsets.all(2.0),
-            shape: CircleBorder(),
             minWidth: 4.0,
           ),
         ),

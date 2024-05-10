@@ -26,10 +26,11 @@ class MonthYearGridBuilder extends StatelessWidget {
         (final int index) => MonthButton(
           theme: controller.theme,
           date: DateTime(
-              controller.localFirstDate != null
-                  ? controller.localFirstDate!.year + page
-                  : page,
-              index + 1),
+            controller.localFirstDate != null
+                ? controller.localFirstDate!.year + page
+                : page,
+            index + 1,
+          ),
           localeString: getLocale(context, selectedLocale: controller.locale),
           onMonthSelected: onMonthSelected,
           controller: controller,
